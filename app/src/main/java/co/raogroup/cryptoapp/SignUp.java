@@ -9,21 +9,24 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import co.raogroup.cryptoapp.databinding.ActivityLoginBinding;
+import co.raogroup.cryptoapp.databinding.ActivitySignUpBinding;
 
-public class Login_activity extends AppCompatActivity {
+public class SignUp extends AppCompatActivity {
 
-  ActivityLoginBinding binding;
-
+  ActivitySignUpBinding binding;
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    binding = ActivityLoginBinding.inflate(getLayoutInflater());
+    binding = ActivitySignUpBinding.inflate(getLayoutInflater());
     setContentView(binding.getRoot());
 
-    binding.goToSignUp.setOnClickListener(v -> {
-      startActivity(new Intent(Login_activity.this, SignUp.class));
+
+    binding.goToLogin.setOnClickListener(v -> {
+
+      startActivity(new Intent(SignUp.this, Login_activity.class));
+
     });
+
 
   }
 }

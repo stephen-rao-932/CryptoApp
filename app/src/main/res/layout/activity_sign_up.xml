@@ -34,7 +34,7 @@
           android:layout_height="wrap_content"
           android:layout_margin="32dp"
           android:fontFamily="@font/squre"
-          android:text="Login into \nYour wallet"
+          android:text="Create\nAccount"
           android:textColor="#fff"
           android:textSize="35sp"
           android:textStyle="bold" />
@@ -48,11 +48,11 @@
           android:orientation="vertical">
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
+            android:id="@+id/editTextTextName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Email"
+            android:hint="Name"
             android:textColorHint="#fff"
             android:drawablePadding="10dp"
             android:layout_marginTop="25dp"
@@ -61,8 +61,25 @@
             android:padding="20dp"
             android:textColor="#fff"
             android:background="@drawable/input_baground"
+            android:drawableLeft="@drawable/name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/input_baground"
             android:drawableLeft="@drawable/email"
-            android:inputType="textEmailAddress" />
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Email"
+            android:textColor="#fff"
+            android:inputType="textEmailAddress"
+            android:padding="20dp"
+            android:textColorHint="#fff" />
 
         <EditText
             android:id="@+id/editTextTextPassword"
@@ -76,66 +93,35 @@
             android:drawablePadding="10dp"
             android:ems="10"
             android:hint="Password"
-            android:textColor="#fff"
             android:inputType="textPassword"
             android:padding="20dp"
-            android:textColorHint="#fff" />
-
-        <LinearLayout
-            android:layout_marginTop="32dp"
-            android:layout_marginBottom="32dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-
-          <ImageView
-              android:id="@+id/imageView5"
-              android:layout_width="55dp"
-              android:layout_height="55dp"
-              android:layout_marginRight="15dp"
-              app:srcCompat="@drawable/facebook" />
-
-          <ImageView
-              android:layout_marginLeft="15dp"
-              android:id="@+id/imageView6"
-              android:layout_width="55dp"
-              android:layout_height="55dp"
-              app:srcCompat="@drawable/google" />
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/goToSignUp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Are you new user? Register"
-            android:textAlignment="center"
             android:textColor="#fff"
-            android:textSize="18sp" />
+            android:textColorHint="#fff" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="25dp"
             android:layout_marginEnd="25dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/button_baground"
             android:padding="15dp"
-            android:text="Login"
+            android:text="Register"
             android:textColor="#fff"
             android:textSize="20sp"
             android:textStyle="bold" />
+
         <TextView
-            android:textAlignment="center"
-            android:textColor="#fff"
-            android:textSize="18sp"
+            android:id="@+id/goToLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="25dp"
-            android:text="Forget Password? Recover it"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:text="I have alrady an account?\nLogin"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="18sp" />
       </LinearLayout>
     </LinearLayout>
 
